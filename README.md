@@ -121,21 +121,15 @@ npm install
 
 ```
 DB_HOST=localhost
+DB_NAME=nome_do_banco
 DB_USER=usuario
 DB_PASSWORD=senha
-DB_NAME=nome_do_banco
 DB_PORT=3306
 PORT=3000
 
 ```
 
-### 📦 Execute as migrações:
-
-```bash
-npm run db:migrate
-```
-
-### 🚀 Inicie o servidor:
+### 🚀 Inicie o servidor pasta backend:
 
 ```bash
 npm start
@@ -155,7 +149,7 @@ A API estará disponível em: `http://localhost:3000`
 | GET    | `/api/clientes/:id`     | Detalhar cliente específico      |
 | POST   | `/api/clientes`         | Adicionar novo cliente           |
 | PUT    | `/api/clientes/:id`     | Atualizar cliente                |
-| DELETE | `/api/clientes/:id`     | Desativar cliente (soft delete) |
+| DELETE | `/api/clientes/:id`     | Desativar cliente                |
 
 ---
 
