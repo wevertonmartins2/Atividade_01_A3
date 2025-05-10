@@ -1,5 +1,5 @@
 
-# 📦 Atividade_01_A3
+# 📋 Ficha-Resumo - API do Repositório Atividade_01_A3
 
 API RESTful desenvolvida com **Node.js** e **Express.js** para gerenciamento de **Clientes** e **Produtos**, utilizando o ORM **Sequelize** com banco de dados **MySQL**.
 
@@ -47,24 +47,36 @@ API RESTful desenvolvida com **Node.js** e **Express.js** para gerenciamento de 
 - 🧾 Validação e formatação de CPF  
 - 📅 Garantia de datas de nascimento válidas (no passado)
 
-### ⚠️ Tratamento de Erros
-- Middleware global para respostas consistentes
-
----
 
 ## 📁 Estrutura do Projeto
 
 ```
 Atividade_01_A3/
-│
-├── config/           # Configuração do banco de dados
-├── controllers/      # Lógica de negócios (Clientes e Produtos)
-├── middlewares/      # Middlewares personalizados
-├── models/           # Modelos Sequelize com validações
-├── routes/           # Rotas da API
-├── app.js            # Arquivo principal do servidor
-└── .env.example      # Exemplo de configuração ambiente
-```
+├── backend/
+│   ├── .env                     # Configurações de ambiente
+│   ├── Package.json             # Configuração do projeto e dependências
+│   ├── package-lock.json        # Controle de versão das dependências
+│   ├── node_modules/            # Dependências instaladas
+│   ├── src/                     # Código-fonte principal
+│       ├── app.js               # Ponto de entrada da aplicação
+│       ├── config/
+│       │   ├── database.js      # Configuração do banco de dados
+│       ├── controllers/
+│       │   ├── produtoController.js # Controlador para lógica de produtos
+│       │   ├── clienteController.js # Controlador para lógica de clientes
+│       ├── models/
+│       │   ├── produto.js       # Modelo de dados para produtos
+│       │   ├── cliente.js       # Modelo de dados para clientes
+│       ├── repositories/
+│       │   ├── clienteRepository.js # Repositório para lógica de clientes
+│       │   ├── produtoRepository.js # Repositório para lógica de produtos
+│       ├── routes/
+│       │   ├── clienteRoutes.js # Rotas relacionadas a clientes
+│       │   ├── produtoRoutes.js # Rotas relacionadas a produtos
+│       ├── services/
+│       │   ├── clienteService.js    # Serviço para lógica de clientes
+│       │   ├── produtoService.js    # Serviço para lógica de produtos
+
 
 ---
 
@@ -107,11 +119,13 @@ npm install
 2. Renomeie `.env.example` para `.env` e configure:
 
 ```
-DB_DATABASE=nome_do_banco
+DB_HOST=localhost
 DB_USER=usuario
 DB_PASSWORD=senha
-DB_HOST=localhost
+DB_NAME=nome_do_banco
 DB_PORT=3306
+PORT=3000
+
 ```
 
 ### 📦 Execute as migrações:
@@ -159,12 +173,16 @@ A API estará disponível em: `http://localhost:3000`
 ### 👥 Criar Cliente
 
 POST /api/clientes
-{
-  "nome": "João da Silva",
-  "email": "joao.silva@email.com",
-  "cpf": "123.456.789-00",
-  "data_nascimento": "1990-05-15"
-}
+
+  {
+    "nome": "João Silva",
+    "email": "joao@example.com",
+    "telefone": "123456789",
+    "endereco": "Rua A, 123",
+    "data_nascimento": "1990-01-01",
+    "cpf": "123.456.789-00",
+    "ativo": true
+  }
 
 ### 📦 Criar Produto
 
@@ -172,6 +190,7 @@ POST /api/produtos
 {
   "nome": "Notebook Dell Inspiron",
   "descricao": "Notebook com 16GB RAM e SSD 512GB",
+  "categoria": "eletronicos",
   "preco": 4599.99,
   "estoque": 10
 }
