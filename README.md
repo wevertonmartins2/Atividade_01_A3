@@ -153,7 +153,6 @@ A API estará disponível em: `http://localhost:3000`
 
 ---
 
-## 📬 Exemplos de Requisições (via Postman ou Insomnia)
 📦 Produtos
 
 | Método | Rota                    | Descrição                        |
@@ -165,6 +164,9 @@ A API estará disponível em: `http://localhost:3000`
 | DELETE | `/api/produtos/:id`     | Remover produto                  |
 
 ---
+
+## 📬 Exemplos de Requisições (via Postman ou Insomnia)
+
 ### 👥 Criar Cliente
 
 POST /api/clientes
