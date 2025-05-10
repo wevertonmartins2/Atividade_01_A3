@@ -184,6 +184,7 @@ POST /api/clientes
 ### 📦 Criar Produto
 
 POST /api/produtos
+
 {
   "nome": "Notebook Dell Inspiron",
   "descricao": "Notebook com 16GB RAM e SSD 512GB",
