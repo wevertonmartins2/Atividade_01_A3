@@ -34,7 +34,7 @@ API RESTful desenvolvida com **Node.js** e **Express.js** para gerenciamento de 
 - 🔍 Detalhar um cliente específico  
 - ➕ Adicionar novos clientes  
 - ✏️ Atualizar informações de clientes  
-- 🗑️ Desativar clientes (soft delete)
+- ❌ Remover clientes
 
 ### 📦 Produtos
 - 📃 Listar todos os produtos  
