@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 # 📋 Ficha-Resumo - API do Repositório Atividade_01_A3
 
 API RESTful desenvolvida com **Node.js** e **Express.js** para gerenciamento de **Clientes** e **Produtos**, utilizando o ORM **Sequelize** com banco de dados **MySQL**.
@@ -223,3 +224,5 @@ Desenvolvido por: **Weverton Martins**
 🔗 GitHub: [@wevertonmartins2](https://github.com/wevertonmartins2)
 
 ---
+=======
+>>>>>>> 87d9bf2147a78d933bf4c2b3c1997d6a33f85803
