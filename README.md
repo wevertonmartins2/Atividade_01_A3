@@ -1,6 +1,6 @@
 
 <<<<<<< HEAD
-# 📋 Ficha-Resumo - API do Repositório Atividade_01_A3
+# 📋 Ficha-Resumo - API de **Clientes** e **Produtos**
 
 API RESTful desenvolvida com **Node.js** e **Express.js** para gerenciamento de **Clientes** e **Produtos**, utilizando o ORM **Sequelize** com banco de dados **MySQL**.
 
