@@ -149,7 +149,7 @@ A API estará disponível em: `http://localhost:3000`
 | GET    | `/api/clientes/:id`     | Detalhar cliente específico      |
 | POST   | `/api/clientes`         | Adicionar novo cliente           |
 | PUT    | `/api/clientes/:id`     | Atualizar cliente                |
-| DELETE | `/api/clientes/:id`     | Desativar cliente                |
+| DELETE | `/api/clientes/:id`     | Remover cliente                |
 
 ---
 
